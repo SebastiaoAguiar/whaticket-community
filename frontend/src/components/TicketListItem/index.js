@@ -4,13 +4,8 @@ import { useHistory, useParams } from "react-router-dom";
 import { parseISO, format, isSameDay } from "date-fns";
 import clsx from "clsx";
 
-<<<<<<< HEAD
-import { makeStyles } from "@material-ui/core/styles";
-import { brand } from "../../theme/brand";
-=======
 import { alpha, makeStyles } from "@material-ui/core/styles";
 import { green } from "@material-ui/core/colors";
->>>>>>> origin/master
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import ListItemAvatar from "@material-ui/core/ListItemAvatar";
@@ -90,15 +85,6 @@ const useStyles = makeStyles(theme => ({
 
 	unreadCount: {
 		alignSelf: "center",
-<<<<<<< HEAD
-		marginRight: 8,
-		marginLeft: "auto",
-	},
-
-	badgeStyle: {
-		color: "white",
-		backgroundColor: brand.main,
-=======
 		minWidth: 20,
 		marginLeft: theme.spacing(1),
 		padding: theme.spacing(0, 0.75),
@@ -108,7 +94,6 @@ const useStyles = makeStyles(theme => ({
 		textAlign: "center",
 		...theme.typography.caption,
 		fontWeight: 500,
->>>>>>> origin/master
 	},
 
 	acceptButton: {
@@ -130,20 +115,6 @@ const useStyles = makeStyles(theme => ({
 	},
 
 	userTag: {
-<<<<<<< HEAD
-		position: "absolute",
-		marginRight: 5,
-		right: 5,
-		bottom: 5,
-		background: brand.main,
-		color: "#ffffff",
-		border: "1px solid #CCC",
-		padding: 1,
-		paddingLeft: 5,
-		paddingRight: 5,
-		borderRadius: 10,
-		fontSize: "0.9em"
-=======
 		flex: "none",
 		alignSelf: "center",
 		marginLeft: theme.spacing(1),
@@ -152,7 +123,6 @@ const useStyles = makeStyles(theme => ({
 		backgroundColor: theme.palette.action.selected,
 		color: theme.palette.text.secondary,
 		...theme.typography.caption,
->>>>>>> origin/master
 	},
 }));
 

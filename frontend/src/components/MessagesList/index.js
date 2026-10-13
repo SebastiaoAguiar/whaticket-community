@@ -4,7 +4,7 @@ import { isSameDay, parseISO, format } from "date-fns";
 import openSocket from "../../services/socket-io";
 import clsx from "clsx";
 
-import { brand } from "../../theme/brand";
+import { green } from "@material-ui/core/colors";
 import {
   Button,
   CircularProgress,
@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   circleLoading: {
-    color: brand.main,
+    color: green[500],
     position: "absolute",
     opacity: "70%",
     top: 0,
@@ -143,13 +143,8 @@ const useStyles = makeStyles((theme) => ({
     },
 
     whiteSpace: "pre-wrap",
-<<<<<<< HEAD
-    backgroundColor: brand.bubbleSent,
-    color: "#303030",
-=======
     backgroundColor: theme.palette.userMessage.main,
     color: theme.palette.text.primary,
->>>>>>> origin/master
     alignSelf: "flex-end",
     borderTopLeftRadius: 8,
     borderTopRightRadius: 0,
@@ -165,7 +160,7 @@ const useStyles = makeStyles((theme) => ({
   quotedContainerRight: {
     margin: "-3px -80px 6px -6px",
     overflowY: "hidden",
-    backgroundColor: brand.bubbleSentQuoted,
+    backgroundColor: "#cfe9ba",
     borderRadius: "7.5px",
     display: "flex",
     position: "relative",
@@ -181,7 +176,7 @@ const useStyles = makeStyles((theme) => ({
   quotedSideColorRight: {
     flex: "none",
     width: "4px",
-    backgroundColor: brand.main,
+    backgroundColor: "#35cd96",
   },
 
   messageActionsButton: {
@@ -261,7 +256,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   ackDoneAllIcon: {
-    color: brand.main,
+    color: green[500],
     fontSize: 18,
     verticalAlign: "middle",
     marginLeft: 4,

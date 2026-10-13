@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-# BelaChat
-
-Gestor de atendimentos de WhatsApp da Farmabela (base: [whaticket-community](https://github.com/canove/whaticket-community), MIT).
-
-- `frontend/` — React + Vite (Material UI), deploy na Vercel
-- `backend/` — Node + Express + Sequelize + whatsapp-web.js, banco Postgres (Supabase)
-
-Cada pasta tem seu próprio `package.json` e `.env.example`.
-=======
 <p align="center">
   <a href="https://whaticket.com/?utm_source=github&utm_medium=readme&utm_campaign=whaticket-oss&utm_content=en-logo" target="_blank">
     <picture>
@@ -577,4 +567,3 @@ images are registered trademarks of their respective owners.
 Using unofficial clients to connect to WhatsApp can get your number blocked. Run this
 software at your own risk, and review it against your own security requirements before
 exposing it to the internet.
->>>>>>> origin/master
