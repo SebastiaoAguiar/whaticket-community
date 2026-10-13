@@ -3,6 +3,7 @@ import Routes from "./routes";
 import "react-toastify/dist/ReactToastify.css";
 
 import { createTheme, ThemeProvider } from "@material-ui/core/styles";
+import { brandPalette } from "./theme/brand";
 import { ptBR } from "@material-ui/core/locale";
 
 const App = () => {
@@ -21,7 +22,7 @@ const App = () => {
         },
       },
       palette: {
-        primary: { main: "#2576d2" },
+        ...brandPalette,
       },
     },
     locale

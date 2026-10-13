@@ -2,6 +2,7 @@ import React, { createContext, useState, useContext, useMemo } from "react";
 import PropTypes from "prop-types";
 import { createMuiTheme, ThemeProvider as MUIThemeProvider } from "@material-ui/core/styles";
 import { CssBaseline } from "@material-ui/core";
+import { brandPalette } from "../../theme/brand";
 
 const ThemeContext = createContext();
 
@@ -17,6 +18,7 @@ export const ThemeProvider = ({ children }) => {
       createMuiTheme({
         palette: {
           type: darkMode ? "dark" : "light",
+          ...brandPalette,
         },
       }),
     [darkMode]

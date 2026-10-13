@@ -1,6 +1,6 @@
 {
-	"short_name": "WhaTicket",
-	"name": "WhaTicket",
+	"short_name": "BelaChat",
+	"name": "BelaChat",
 	"icons": [
 		{
 			"src": "favicon.ico",
@@ -15,6 +15,6 @@
 	],
 	"start_url": ".",
 	"display": "standalone",
-	"theme_color": "#000000",
+	"theme_color": "#D91E36",
 	"background_color": "#ffffff"
 }

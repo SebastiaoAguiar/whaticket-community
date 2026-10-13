@@ -232,7 +232,7 @@ const LoggedInLayout = ({ children }) => {
             noWrap
             className={classes.title}
           >
-            WhaTicket
+            BelaChat
           </Typography>
 
           <div className={classes.themeSwitchContainer}>

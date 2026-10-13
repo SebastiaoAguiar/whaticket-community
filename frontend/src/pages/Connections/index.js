@@ -3,7 +3,7 @@ import { toast } from "react-toastify";
 import { format, parseISO } from "date-fns";
 
 import { makeStyles } from "@material-ui/core/styles";
-import { green } from "@material-ui/core/colors";
+import { brand } from "../../theme/brand";
 import {
 	Button,
 	TableBody,
@@ -64,7 +64,7 @@ const useStyles = makeStyles(theme => ({
 		textAlign: "center",
 	},
 	buttonProgress: {
-		color: green[500],
+		color: brand.main,
 	},
 }));
 
@@ -274,7 +274,7 @@ const Connections = () => {
 				)}
 				{whatsApp.status === "CONNECTED" && (
 					<CustomToolTip title={i18n.t("connections.toolTips.connected.title")}>
-						<SignalCellular4Bar style={{ color: green[500] }} />
+						<SignalCellular4Bar style={{ color: brand.main }} />
 					</CustomToolTip>
 				)}
 				{(whatsApp.status === "TIMEOUT" || whatsApp.status === "PAIRING") && (
@@ -366,7 +366,7 @@ const Connections = () => {
 											<TableCell align="center">
 												{whatsApp.isDefault && (
 													<div className={classes.customTableCell}>
-														<CheckCircle style={{ color: green[500] }} />
+														<CheckCircle style={{ color: brand.main }} />
 													</div>
 												)}
 											</TableCell>

@@ -14,7 +14,7 @@ import {
   DialogTitle,
   CircularProgress,
 } from "@material-ui/core";
-import { green } from "@material-ui/core/colors";
+import { brand } from "../../theme/brand";
 import { i18n } from "../../translate/i18n";
 
 import api from "../../services/api";
@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   buttonProgress: {
-    color: green[500],
+    color: brand.main,
     position: "absolute",
     top: "50%",
     left: "50%",

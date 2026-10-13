@@ -5,7 +5,7 @@ import { parseISO, format, isSameDay } from "date-fns";
 import clsx from "clsx";
 
 import { makeStyles } from "@material-ui/core/styles";
-import { green } from "@material-ui/core/colors";
+import { brand } from "../../theme/brand";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import ListItemAvatar from "@material-ui/core/ListItemAvatar";
@@ -83,7 +83,7 @@ const useStyles = makeStyles(theme => ({
 
 	badgeStyle: {
 		color: "white",
-		backgroundColor: green[500],
+		backgroundColor: brand.main,
 	},
 
 	acceptButton: {
@@ -105,7 +105,7 @@ const useStyles = makeStyles(theme => ({
 		marginRight: 5,
 		right: 5,
 		bottom: 5,
-		background: "#2576D2",
+		background: brand.main,
 		color: "#ffffff",
 		border: "1px solid #CCC",
 		padding: 1,
