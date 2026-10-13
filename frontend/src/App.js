@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Routes from "./routes";
 import "react-toastify/dist/ReactToastify.css";
 
+<<<<<<< HEAD
 import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 import { brandPalette } from "./theme/brand";
 import { ptBR } from "@material-ui/core/locale";
@@ -43,6 +44,10 @@ const App = () => {
       <Routes />
     </ThemeProvider>
   );
+=======
+const App = () => {
+  return <Routes />;
+>>>>>>> origin/master
 };
 
 export default App;

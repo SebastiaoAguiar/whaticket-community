@@ -38,7 +38,7 @@ const useStyles = makeStyles(theme => ({
 		boxShadow: "none !important",
 	},
 	iconButton: {
-		color: theme.palette.text.primary,
+		color: theme.palette.common.white,
 	},
 }));
 
@@ -67,7 +67,7 @@ const NotificationsPopOver = () => {
 		if (!("Notification" in window)) {
 			console.log("This browser doesn't support notifications");
 		} else {
-			Notification.requestPermission();
+			void Notification.requestPermission();
 		}
 	}, [play]);
 
@@ -196,7 +196,7 @@ const NotificationsPopOver = () => {
 				aria-label="Open Notifications"
 				className={classes.iconButton}
 			>
-				<Badge badgeContent={notifications.length} color="secondary">
+				<Badge badgeContent={notifications.length} color="error">
 					<ChatIcon />
 				</Badge>
 			</IconButton>

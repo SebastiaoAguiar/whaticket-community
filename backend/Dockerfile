@@ -1,4 +1,15 @@
+<<<<<<< HEAD
 FROM node:20-bookworm
+=======
+FROM node:22-bookworm as build-deps
+
+RUN apt-get update && apt-get install -y wget ffmpeg
+
+ENV DOCKERIZE_VERSION v0.6.1
+RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSION/dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz \
+    && tar -C /usr/local/bin -xzvf dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz \
+    && rm dockerize-linux-amd64-$DOCKERIZE_VERSION.tar.gz
+>>>>>>> origin/master
 
 RUN apt-get update \
     && apt-get install -y wget gnupg \
@@ -15,7 +26,7 @@ RUN chmod +x /usr/local/bin/dumb-init
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
 
 WORKDIR /usr/src/app
-COPY package*.json ./
+COPY package*.json .npmrc ./
 RUN npm install
 
 COPY . .
